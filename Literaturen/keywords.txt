@@ -1,0 +1,10 @@
+Fehlerdiagnose Schwingung
+breitbandiger Kennwerte
+Hüllkurvenanalyse
+ordnungsanalyse
+Überwachung von Schwingung
+Kennwerte von Schwingungsmessung
+vibration signal fault diagnosis
+mechanical fault diagnosis
+vibrational signal analysis
+model-based fault detection
