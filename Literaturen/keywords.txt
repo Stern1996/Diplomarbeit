@@ -8,3 +8,5 @@ vibration signal fault diagnosis
 mechanical fault diagnosis
 vibrational signal analysis
 model-based fault detection
+pattern recognition
+Signalanalyse
