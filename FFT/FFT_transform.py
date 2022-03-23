@@ -22,7 +22,7 @@ def fft_transform(filename,p_num):
   xs = x[0:fft_size] #the sampling data for calculation
   xf = np.fft.rfft(xs)/fft_size #fft-transform
   freqs = np.linspace(0, 24000, (fft_size//2+1))
-  xfp = 20*np.log10(np.clip(np.abs(xf), 1e-20, 1e100)) #calculate the decibel(dB) of each frequency
+  xfp = np.abs(xf) #calculate the amplitude of each frequency
   #Output the result
   plt.figure(figsize=(8,4))
   plt.subplot(211)
