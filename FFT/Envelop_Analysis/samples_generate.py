@@ -81,4 +81,5 @@ if __name__ == "__main__":
     for name in names:
         if os.path.exists(path+str(name)+".mat") and name != 174:
             samples_get(str(name)+".mat",samplingrate,sampling_time,num_samples)
-        exc_get('174.mat',samplingrate,sampling_time,num_samples)
+        if os.path.exists(path+str(name)+".mat") and name == 174:
+            exc_get('174.mat',samplingrate,sampling_time,num_samples)

@@ -16,7 +16,7 @@ The creterions are related to the max. frequency-component and the mean of top15
 #criterion value
 ir_max_freq_low = 120
 ir_max_freq_high = 180
-others_max_freq_low = 86
+others_max_freq_low = 0
 others_max_freq_high = 120
 
 no_mean_top15_low = 0
@@ -26,7 +26,7 @@ ba_mean_top15_high = 0.01
 ir_mean_top15_low = 0.01
 ir_mean_top15_high = 0.06
 or_mean_top15_low = 0.1
-or_mean_top15_high = 0.2
+or_mean_top15_high = 1
 
 #sampling parameter
 num_samples = 50
@@ -104,4 +104,4 @@ if __name__ == "__main__":
     print(res)
     print("sample_size:",sample_size)
     print("positive_rate：",(1-res['unknown']/sum(sample_size)))
-    print("judge_acc:",res['right']/(sum(sample_size)-res['mis_right']))
+    print("judge_acc:",res['right']/(sum(sample_size)-res['unknown']))
