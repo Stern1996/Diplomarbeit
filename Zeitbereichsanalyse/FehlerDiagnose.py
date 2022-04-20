@@ -7,11 +7,11 @@ import random
 The creterion is related to the vabrational amplitude (Max)
 NO（normal）: 0.2-0.3
 
-IR(Inner race): 2.0-3.5
+IR(Inner race): 1.4-3.5
 
 BA(Ball): 0.4-0.7
 
-OR(Outer race): 5.0-6.5
+OR(Outer race): 4.5-6.5
 '''
 # This program is uesd for evaluating the creterion in time domain.
 
@@ -19,11 +19,11 @@ OR(Outer race): 5.0-6.5
 #criterion value
 no_low = 0.2
 no_high = 0.3
-ir_low = 2.0
+ir_low = 1.3
 ir_high = 3.5
-ba_low = 0.5
+ba_low = 0.4
 ba_high = 0.7
-or_low = 5.0
+or_low = 4.5
 or_high = 6.5
 #sampling parameter
 num_samples = 50
@@ -69,6 +69,8 @@ def one_sample_process(filename):
   num = filename.strip(".mat")
   if int(num) < 100:
     index = "X" + "0" + num + "_DE_time"
+  elif int(num) == 174:
+    index = "X" + "173" + "_DE_time"
   else:
     index = "X" + num + "_DE_time"
   data = data[index]
@@ -117,8 +119,8 @@ def acc_cal(test_data,num_datasets_fault,fault_list):
 
 if __name__ == "__main__":
   # We test the criterion for 10 times and show the results,the filenames must correspond to the fault_list!!
-  filenames = [["97.mat","98.mat"],["109.mat","110.mat"],["122.mat","123.mat"],["135.mat","136.mat"]]
+  filenames = [["97.mat"],["213.mat"],["226.mat"],["238.mat"]]
   fault_list = ['no','ir','ba','or']
   for test_times in range(10):
     test_data = samples_concat(filenames)
-    print("The accuray of the settled criterion is: ", acc_cal(test_data,2,fault_list))
+    print("The accuray of the settled criterion is: ", acc_cal(test_data,1,fault_list))
