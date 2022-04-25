@@ -28,12 +28,6 @@ ir_mean_top15_high = 0.06
 or_mean_top15_low = 0.1
 or_mean_top15_high = 1
 
-#sampling parameter
-num_samples = 50
-sample_size = 100
-window_len = 2000
-
-
 #judge_criteria
 def judge_value(max_freq,mean_top15):
     if ir_max_freq_low <= max_freq < ir_max_freq_high:
