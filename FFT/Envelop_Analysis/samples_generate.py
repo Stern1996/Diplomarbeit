@@ -2,6 +2,7 @@ import numpy as np
 import scipy.io as scio
 import random
 import os
+import json
 
 #This programm is used to translate the datafile from .mat to .npy and write the corresponding label for each file.
 #The fault type of datafile(.mat) ist related to the filenames.
@@ -16,7 +17,7 @@ samplingrate = 48000
 sampling_time = 0.5
 num_samples = 20
 
-#processing each datafile and generate the npy file
+#processing each datafile and generate the npy file, output[num_samples*(samplingrate*sampling_time)]
 def samples_get(filename,samplingrate,sampling_time,num_samples):
     # readin data
     data = scio.loadmat("./dataset/"+filename)
@@ -44,7 +45,7 @@ def samples_get(filename,samplingrate,sampling_time,num_samples):
         start = random.randint(0, (data.shape[0] - int(samplingrate * sampling_time) - 1))
         segment = data[start:(start + int(samplingrate * sampling_time))]
         samples.append(segment)
-    res = {typ: samples}
+    res = {filename: {typ: samples}}
     np.save("./sampling/"+num + "_" + str(typ) + ".npy", res)
 
 #174.mat is an exception!!!!!
@@ -72,7 +73,7 @@ def exc_get(filename,samplingrate,sampling_time,num_samples):
         start = random.randint(0, (data.shape[0] - int(samplingrate * sampling_time) - 1))
         segment = data[start:(start + int(samplingrate * sampling_time))]
         samples.append(segment)
-    res = {typ: samples}
+    res = {filename: {typ: samples}}
     np.save("./sampling/"+num + "_" + str(typ) + ".npy", res)
 
 
