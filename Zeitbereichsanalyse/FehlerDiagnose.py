@@ -197,7 +197,7 @@ if __name__ == "__main__":
   print("The criterion is:",criterions)
   print("==========================")
 
-  # We test the criterion for 10 times and show the results,the filenames must correspond to the fault_list!!
+  # We test the criterion for 1 times and show the results,the filenames must correspond to the fault_list!!
   tags = ["or"]
   result = {}
   filenames, fault_list = get_filename(tags) #ir: 105 106 107 108 169 170 171 172 or: 130 131 132 333 197 198 199 200
