@@ -1,0 +1,1 @@
+{"default": {"ir_max_freq_low": 120.0, "ir_max_freq_high": 180.0, "others_max_freq_low": 0.0, "others_max_freq_high": 120.0, "no_mean_top15_low": 0.0, "no_mean_top15_high": 0.005, "ba_mean_top15_low": 0.005, "ba_mean_top15_high": 0.01, "ir_mean_top15_low": 0.01, "ir_mean_top15_high": 0.06, "or_mean_top15_low": 0.1, "or_mean_top15_high": 0.2}}

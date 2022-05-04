@@ -1,0 +1,202 @@
+{
+  "97.mat": {
+    "error": "no",
+    "frequency": 1797,
+    "size": 0
+  },
+  "98.mat": {
+    "error": "no",
+    "frequency": 1772,
+    "size": 0
+  },
+  "99.mat": {
+    "error": "no",
+    "frequency": 1750,
+    "size": 0
+  },
+  "100.mat": {
+    "error": "no",
+    "frequency": 1730,
+    "size": 0
+  },
+  "109.mat": {
+    "error": "ir",
+    "frequency": 1797,
+    "size": 0.007
+  },
+  "110.mat": {
+    "error": "ir",
+    "frequency": 1772,
+    "size": 0.007
+  },
+  "111.mat": {
+    "error": "ir",
+    "frequency": 1750,
+    "size": 0.007
+  },
+  "112.mat": {
+    "error": "ir",
+    "frequency": 1730,
+    "size": 0.007
+  },
+  "174.mat": {
+    "error": "ir",
+    "frequency": 1797,
+    "size": 0.014
+  },
+  "175.mat": {
+    "error": "ir",
+    "frequency": 1772,
+    "size": 0.014
+  },
+  "176.mat": {
+    "error": "ir",
+    "frequency": 1750,
+    "size": 0.014
+  },
+  "177.mat": {
+    "error": "ir",
+    "frequency": 1730,
+    "size": 0.014
+  },
+  "213.mat": {
+    "error": "ir",
+    "frequency": 1797,
+    "size": 0.021
+  },
+  "214.mat": {
+    "error": "ir",
+    "frequency": 1772,
+    "size": 0.021
+  },
+  "215.mat": {
+    "error": "ir",
+    "frequency": 1750,
+    "size": 0.021
+  },
+  "217.mat": {
+    "error": "ir",
+    "frequency": 1730,
+    "size": 0.021
+  },
+  "122.mat": {
+    "error": "ba",
+    "frequency": 1797,
+    "size": 0.007
+  },
+  "123.mat": {
+    "error": "ba",
+    "frequency": 1772,
+    "size": 0.007
+  },
+  "124.mat": {
+    "error": "ba",
+    "frequency": 1750,
+    "size": 0.007
+  },
+  "125.mat": {
+    "error": "ba",
+    "frequency": 1730,
+    "size": 0.007
+  },
+  "189.mat": {
+    "error": "ba",
+    "frequency": 1797,
+    "size": 0.014
+  },
+  "190.mat": {
+    "error": "ba",
+    "frequency": 1772,
+    "size": 0.014
+  },
+  "191.mat": {
+    "error": "ba",
+    "frequency": 1750,
+    "size": 0.014
+  },
+  "192.mat": {
+    "error": "ba",
+    "frequency": 1730,
+    "size": 0.014
+  },
+  "226.mat": {
+    "error": "ba",
+    "frequency": 1797,
+    "size": 0.021
+  },
+  "227.mat": {
+    "error": "ba",
+    "frequency": 1772,
+    "size": 0.021
+  },
+  "228.mat": {
+    "error": "ba",
+    "frequency": 1750,
+    "size": 0.021
+  },
+  "229.mat": {
+    "error": "ba",
+    "frequency": 1730,
+    "size": 0.021
+  },
+  "135.mat": {
+    "error": "or",
+    "frequency": 1797,
+    "size": 0.007
+  },
+  "136.mat": {
+    "error": "or",
+    "frequency": 1772,
+    "size": 0.007
+  },
+  "137.mat": {
+    "error": "or",
+    "frequency": 1750,
+    "size": 0.007
+  },
+  "138.mat": {
+    "error": "or",
+    "frequency": 1730,
+    "size": 0.007
+  },
+  "201.mat": {
+    "error": "or",
+    "frequency": 1797,
+    "size": 0.014
+  },
+  "202.mat": {
+    "error": "or",
+    "frequency": 1772,
+    "size": 0.014
+  },
+  "203.mat": {
+    "error": "or",
+    "frequency": 1750,
+    "size": 0.014
+  },
+  "204.mat": {
+    "error": "or",
+    "frequency": 1730,
+    "size": 0.014
+  },
+  "238.mat": {
+    "error": "or",
+    "frequency": 1797,
+    "size": 0.021
+  },
+  "239.mat": {
+    "error": "or",
+    "frequency": 1772,
+    "size": 0.021
+  },
+  "240.mat": {
+    "error": "or",
+    "frequency": 1750,
+    "size": 0.021
+  },
+  "241.mat": {
+    "error": "or",
+    "frequency": 1730,
+    "size": 0.021
+  }
+}
