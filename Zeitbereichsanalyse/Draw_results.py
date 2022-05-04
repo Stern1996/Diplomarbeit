@@ -106,7 +106,7 @@ class Draw_3D():
         z_value = np.asarray(data[2][z_label])
 
         # Drawing
-        xx, yy = np.meshgrid(x_value, y_value)  # meshgrid-coordinates
+        xx, yy = np.meshgrid(y_value, x_value)  # meshgrid-coordinates
         X, Y = xx.ravel(), yy.ravel()  # flatten matrix
         bottom = np.zeros_like(X)  # set the bottom-value of bar-diagram
         Z = z_value.ravel()  # flatten matrix
@@ -138,8 +138,8 @@ class Draw_3D():
             ax.set_ylim(1710,1817) #Y-axix is speed
         ax.set_zlim(0.0, 1.0)
         ax.set_title("The constant-feature-value is:"+str(constant_feature))
-        ax.set_xlabel(x_label)
-        ax.set_ylabel(y_label)
+        ax.set_xlabel(y_label)
+        ax.set_ylabel(x_label)
         ax.set_zlabel(z_label)
         plt.savefig("diagramm/"+criterion_name+"_3D_"+str(constant_feature) + "_results.jpg")
         plt.show()
