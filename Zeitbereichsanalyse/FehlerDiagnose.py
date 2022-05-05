@@ -73,10 +73,11 @@ def file_has_tags(json, tags):
 def get_filename(tags):
     file_names = []
     error_type = []
-    for file in file_json:
-        if file_has_tags(file_json[file], tags):
-            file_names.append(file)
-            error_type.append(file_json[file]["error"])
+    for i in range(len(tags)):
+        for file in file_json:
+            if file_has_tags(file_json[file], tags[i]):
+                file_names.append(file)
+                error_type.append(file_json[file]["error"])
     return file_names, error_type
 
 # each sample includes 100x2000 points，input sample shape(100,2000)
@@ -198,7 +199,8 @@ if __name__ == "__main__":
   print("==========================")
 
   # We test the criterion for 1 times and show the results,the filenames must correspond to the fault_list!!
-  tags = ["or"]
+  #tags-format like: [["no",1797],["ir",1750]] => fetch all files with tags "no" + 1797 and "ir" + 1750.
+  tags = [["no"],["ir"],["ba"],["or"]]
   result = {}
   filenames, fault_list = get_filename(tags) #ir: 105 106 107 108 169 170 171 172 or: 130 131 132 333 197 198 199 200
   print ("The files to be analysed are: ", filenames)
